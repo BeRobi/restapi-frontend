@@ -1,0 +1,1 @@
+# RESTFull kezdemény JSON fájból

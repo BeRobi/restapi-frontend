@@ -1,5 +1,5 @@
 import DataService from "../Model/DataService.js";
-import TablaView from "../View/TablaView.js";
+import TablaView from "../View/Tablazat/TablaView.js";
 
 export default class Controller {
   constructor() {
