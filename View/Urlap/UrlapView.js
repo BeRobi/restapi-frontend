@@ -45,7 +45,7 @@ export default class UrlapView {
       txt += `<label class="sr-only" for="inlineFormInputGroup${
         this.#obj[key]
       }"></label>
-  <div class="input-group mb-2 mr-sm-2">
+  <div class="col-2">
     <div class="input-group-prepend"></div>
     <input type="text" class="form-control" id="inlineFormInputGroup${
       this.#obj[key]
