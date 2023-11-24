@@ -12,6 +12,7 @@ export default class SorView {
     for (const key in this.#obj) {
       txt += `<td>${this.#obj[key]}</td>`;
     }
+    txt += `<td><span class="kesz">✔️</span><span class="torol">🗑</span></td>`;
 
     txt += "</tr>";
     console.log(txt);

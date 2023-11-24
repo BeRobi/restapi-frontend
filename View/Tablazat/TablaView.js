@@ -23,7 +23,7 @@ export default class TablaView {
     console.log(this.formElem)
 
     console.log(this.tbodyElem);
-    new UrlapView(adatLeiro, this.formElem);
+    //new UrlapView(adatLeiro, this.formElem);
     new FejlecView(adatLeiro, this.theadElem);
    
     this.sorMegjelenit();

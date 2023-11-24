@@ -25,5 +25,18 @@ export default class DataService {
 
   putData() {}
 
-  deleteData() {}
+  deleteData(vegpont, id) {
+    axios
+      .delete(vegpont + "/" + id)
+      .then(function (response) {
+        callback(response);
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+      .finally(function () {
+        // always executed
+      });
+  }
 }

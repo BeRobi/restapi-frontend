@@ -5,6 +5,8 @@ export default class UrlapView {
   constructor(obj, szuloElem) {
     this.#obj = obj;
     this.szuloElem = szuloElem;
+    //this.formElem = $(".urlap");
+    this.gombElem = $("button");
 
     //létrehozok egy form taget a szulőelemben
     //létrehozok egy kapaszkodót formelemhez this.formElem
@@ -19,41 +21,14 @@ export default class UrlapView {
         </div>
         */
 
-    /*      let txt = "<form class=`form`>";
+    let txt = "<form><div class=row>";
     for (const key in this.#obj) {
-      txt += `<label for="fname">${this.#obj[key]}:</label><br>
-      <input type="text" id="fname" name="fname"><br>`
+      txt += `<div class="col-md-2"><input type="text" class="form-control" placeholder="${this.#obj[key]}">
+      </div>`
     }
-    txt += "</form>";
-    console.log(txt);
-    this.szuloElem.append(txt); */
-
-    /*     let txt = "<form class=`form-inline`>";
-    for (const key in this.#obj) {
-      txt += `
-      <label class="sr-only" for="${this.#obj[key]}">Name</label>
-      <input type="text" class="form-control mb-2 mr-sm-2" id="${this.#obj[key]}" placeholder="${this.#obj[key]}">
-    `;
-    }
-    txt += "</form>";
+    txt += `<div class="col-md-2"><button type="submit" class="btn btn-primary mb-2">Submit</button></form></div></div>`;
     console.log(txt);
     this.szuloElem.append(txt);
-  } */
-
-    let txt = "<form class=`form-inline`>";
-    for (const key in this.#obj) {
-      txt += `<label class="sr-only" for="inlineFormInputGroup${
-        this.#obj[key]
-      }"></label>
-  <div class="col-2">
-    <div class="input-group-prepend"></div>
-    <input type="text" class="form-control" id="inlineFormInputGroup${
-      this.#obj[key]
-    }" placeholder="${this.#obj[key]}"></div>`;
-    }
-
-    txt += `<button type="submit" class="btn btn-primary mb-2">Submit</button></form>`;
-    console.log(txt);
-    this.szuloElem.append(txt);
+    
   }
 }
